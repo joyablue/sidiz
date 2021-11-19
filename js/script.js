@@ -1,4 +1,21 @@
 $(document).ready(function(){
+
+	$(document).ready(function () {
+		//안내창
+		let modal = $(".modal");
+		let modal_con = $(".modal-cont, .madal-close");
+		// let modal_close = $(".madal-close");
+	  
+		modal_con.click(function () {
+		  modal.fadeOut()
+		});
+	  
+		// modal_close.click(function () {
+		//   $(this).hide();
+		//   console.log("닫기버튼");
+		// });
+	  });
+
     // visual swiper
 	new Swiper('.swiper-container', {
 		loop: true,
